@@ -18,7 +18,7 @@ export const CustomPatternModal = ({
   const firstUpdate = useRef(true);
 
   useEffect(() => {
-    if (pattern == "") {
+    if (pattern === "") {
       return setWarnMessage("Grok pattern cannot be blank.");
     }
     if (firstUpdate.current) {
